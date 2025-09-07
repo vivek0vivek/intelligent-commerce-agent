@@ -40,7 +40,7 @@ def product_search(query: str, price_max: int, tags: Optional[List[str]] = None)
     results = []
     
     # Convert query to lowercase for matching
-    query_lower = query.lower()
+    query_lower = query.lower().strip()
     
     for product in products:
         # Price filter (strict requirement)

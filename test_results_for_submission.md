@@ -15,15 +15,41 @@ Copy these results to your Notion submission page:
     "size_recommender",
     "eta"
   ],
-  "evidence": [],
+  "evidence": [
+    {
+      "product_id": "P1",
+      "title": "Midi Wrap Dress",
+      "price": 119,
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "color": "Charcoal"
+    },
+    {
+      "product_id": "P2",
+      "title": "Satin Slip Dress",
+      "price": 99,
+      "sizes": [
+        "XS",
+        "S",
+        "M"
+      ],
+      "color": "Blush"
+    }
+  ],
   "policy_decision": null,
-  "final_message": "I don't see any products matching those criteria in our current collection.\n\n**Size recommendation:** M - Based on your preference between M/L, I recommend size M for a more fitted look. You can always size up to L if you prefer a looser fit.\n\n**Shipping to 560001:** 2-3 business days\n\nWould you like more details about any of these options?"
+  "final_message": "I found 2 great options for you:\n\n1. **Midi Wrap Dress** ($119, Charcoal) - Available in S, M, L\n2. **Satin Slip Dress** ($99, Blush) - Available in XS, S, M\n\n**Size recommendation:** M - Based on your preference between M/L, I recommend size M for a more fitted look. You can always size up to L if you prefer a looser fit.\n\n**Shipping to 560001:** 2-3 business days\n\nWould you like more details about any of these options?"
 }
 ```
 
 **Final Reply:**
 ```
-I don't see any products matching those criteria in our current collection.
+I found 2 great options for you:
+
+1. **Midi Wrap Dress** ($119, Charcoal) - Available in S, M, L
+2. **Satin Slip Dress** ($99, Blush) - Available in XS, S, M
 
 **Size recommendation:** M - Based on your preference between M/L, I recommend size M for a more fitted look. You can always size up to L if you prefer a looser fit.
 

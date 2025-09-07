@@ -127,19 +127,23 @@ def tool_selector_node(state: AgentState) -> AgentState:
         
         # Product search
         try:
-            query_terms = []
+            # Use single keywords that match product tags exactly
+            query = None
             if "wedding" in user_input.lower():
-                query_terms.append("wedding")
-            if "midi" in user_input.lower():
-                query_terms.append("midi")
-            if "party" in user_input.lower():
-                query_terms.append("party")
-            
-            query = " ".join(query_terms) if query_terms else "dress"
+                query = "wedding"
+            elif "party" in user_input.lower():
+                query = "party"
+            elif "daywear" in user_input.lower():
+                query = "daywear"
+            elif "midi" in user_input.lower():
+                query = "midi"
+            else:
+                query = "dress"
             
             products = product_search(query, price_max)
             tools_called.append("product_search")
             tool_results["product_search"] = products
+            
             
             # Add products to evidence
             for product in products:
