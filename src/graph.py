@@ -158,7 +158,7 @@ def tool_selector_node(state: AgentState) -> AgentState:
             print(f"   Found {len(products)} products under ${price_max}")
             
         except Exception as e:
-            print(f"   Product search error: {e}")
+            pass
         
         # Size recommendation if mentioned
         if any(word in user_input.lower() for word in ["size", "m/l", "between"]):
